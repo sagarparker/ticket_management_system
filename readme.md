@@ -48,9 +48,9 @@ node index.js or nodemon index.js
 ```
 
 
-APIs
+## APIs
 
-## REGISTER
+## Register a user
 
 ```
 curl --location 'http://localhost:5000/users' \
@@ -62,7 +62,7 @@ curl --location 'http://localhost:5000/users' \
 }'
 ```
 
-## LOGIN 
+## user login
 
 ```
 curl --location 'http://localhost:5000/auth/login' \
@@ -73,7 +73,7 @@ curl --location 'http://localhost:5000/auth/login' \
 }'
 ```
 
-## CREATE TICKET 
+## Create a new ticket
 
 ```
 curl --location 'http://localhost:5000/tickets' \
