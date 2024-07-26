@@ -1,0 +1,15 @@
+CREATE TYPE ticket_status AS ENUM('open','closed');
+CREATE TYPE ticket_priority AS ENUM('low','medium','high');
+
+CREATE TABLE TICKETS (
+    ticket_id varchar(255),
+    title varchar(255),
+    description text,
+    type varchar(255),
+    venue varchar(255),
+    status ticket_status,
+    priority ticket_priority,
+    due_date text,
+    created_by varchar(255),
+    assigned_users varchar[]
+)
